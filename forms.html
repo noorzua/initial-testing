@@ -1,0 +1,50 @@
+<!DOCTYPE html><html lang="en"><head>
+  <meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Forms</title>
+</head><body>
+<header><h1>Forms</h1><p><a href="index.html">← Home</a></p></header>
+<nav aria-label="Main navigation">
+  <ul>
+    <li><a href="tags.html">HTML Tags</a></li>
+    <li><a href="semantic.html">Semantic vs Non-Semantic</a></li>
+    <li><a href="forms.html" aria-current="page">Forms</a></li>
+    <li><a href="attributes.html">HTML Attributes</a></li>
+    <li><a href="meta.html">Meta Tags</a></li>
+    <li><a href="aria.html">ARIA</a></li>
+  </ul>
+</nav>
+<main>
+  <section>
+    <h2>Basic form</h2>
+    <form action="#" method="post" aria-labelledby="basic-form-title" data-demo-status>
+      <h3 id="basic-form-title">Sign up</h3>
+      <p><label for="name">Name *</label> <input id="name" name="name" type="text" placeholder="Full name" required></p>
+      <p><label for="email">Email *</label> <input id="email" name="email" type="email" placeholder="you@example.com" required aria-describedby="email-help"> <small id="email-help">We will use this to contact you.</small></p>
+      <fieldset><legend>Preferences</legend>
+        <p><label><input type="checkbox" name="newsletter" checked> Subscribe</label></p>
+        <p><label>Account:
+          <input type="radio" name="account" value="basic" checked> Basic
+          <input type="radio" name="account" value="pro"> Pro
+        </label></p>
+      </fieldset>
+      <p><label for="country">Country</label>
+        <select id="country" name="country"><option value="">— Select —</option><option value="jo">Jordan</option><option value="sa">Saudi Arabia</option><option value="us">United States</option></select>
+      </p>
+      <p><label for="message">Message</label> <textarea id="message" name="message" rows="3" placeholder="Say hello..."></textarea></p>
+      <p><button type="submit">Submit</button> <button type="reset">Reset</button></p>
+      <div id="status" role="status" aria-live="polite">Form status appears here.</div>
+    </form>
+  </section>
+
+  <section>
+    <h2>Native validation</h2>
+    <form action="#" method="get">
+      <label for="age">Age (1–120)</label>
+      <input id="age" name="age" type="number" min="1" max="120" required>
+      <button type="submit">Send</button>
+    </form>
+  </section>
+</main>
+<footer><p>© <span id="year">2025</span></p></footer>
+<script src="shared.js"></script>
+</body></html>

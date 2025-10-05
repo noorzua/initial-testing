@@ -1,0 +1,58 @@
+<!DOCTYPE html><html lang="en"><head>
+  <meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>HTML Tags</title>
+</head><body>
+<header><h1>HTML Tags</h1><p><a href="index.html">← Home</a></p></header>
+<nav aria-label="Main navigation">
+  <ul>
+    <li><a href="tags.html" aria-current="page">HTML Tags</a></li>
+    <li><a href="semantic.html">Semantic vs Non-Semantic</a></li>
+    <li><a href="forms.html">Forms</a></li>
+    <li><a href="attributes.html">HTML Attributes</a></li>
+    <li><a href="meta.html">Meta Tags</a></li>
+    <li><a href="aria.html">ARIA</a></li>
+  </ul>
+</nav>
+<main>
+  <section>
+    <h2>Headings</h2>
+    <h1>H1</h1><h2>H2</h2><h3>H3</h3><h4>H4</h4><h5>H5</h5><h6>H6</h6>
+  </section>
+  <section>
+    <h2>Text & Links</h2>
+    <p>Paragraph with <strong>bold</strong>, <em>italic</em>, <abbr title="HyperText Markup Language">HTML</abbr>.</p>
+    <p>Visit <a href="https://developer.mozilla.org/" target="_blank" rel="noopener">MDN</a>.</p>
+  </section>
+  <section>
+    <h2>Image & Figure</h2>
+    <figure>
+      <img src="https://via.placeholder.com/320x160" alt="Placeholder 320x160">
+      <figcaption>Image with alt text.</figcaption>
+    </figure>
+  </section>
+  <section>
+    <h2>Lists</h2>
+    <ul><li>A</li><li>B</li></ul>
+    <ol><li>First</li><li>Second</li></ol>
+    <dl><dt>Term</dt><dd>Definition</dd></dl>
+  </section>
+  <section>
+    <h2>Table</h2>
+    <table border="1">
+      <caption>Simple table</caption>
+      <thead><tr><th>Product</th><th>Qty</th><th>Price</th></tr></thead>
+      <tbody><tr><td>Pen</td><td>2</td><td>$1.00</td></tr><tr><td>Notebook</td><td>1</td><td>$2.50</td></tr></tbody>
+      <tfoot><tr><td colspan="2">Total</td><td>$3.50</td></tr></tfoot>
+    </table>
+  </section>
+  <section>
+    <h2>Details / Quotes / Address</h2>
+    <details><summary>Expand</summary><p>Hidden until opened.</p></details>
+    <p>Code: <code>&lt;section&gt;</code>. Keys: <kbd>Ctrl</kbd>+<kbd>C</kbd>. Quote: <q cite="https://example.com">Inline quote</q>.</p>
+    <blockquote cite="https://example.com">Block quote text.</blockquote>
+    <address>Contact: <a href="mailto:hello@example.com">hello@example.com</a></address>
+  </section>
+</main>
+<footer><p>© <span id="year">2025</span></p></footer>
+<script src="shared.js"></script>
+</body></html>

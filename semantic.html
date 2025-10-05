@@ -1,0 +1,34 @@
+<!DOCTYPE html><html lang="en"><head>
+  <meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Semantic vs Non-Semantic</title>
+</head><body>
+<header><h1>Semantic vs Non-Semantic</h1><p><a href="index.html">← Home</a></p></header>
+<nav aria-label="Main navigation">
+  <ul>
+    <li><a href="tags.html">HTML Tags</a></li>
+    <li><a href="semantic.html" aria-current="page">Semantic vs Non-Semantic</a></li>
+    <li><a href="forms.html">Forms</a></li>
+    <li><a href="attributes.html">HTML Attributes</a></li>
+    <li><a href="meta.html">Meta Tags</a></li>
+    <li><a href="aria.html">ARIA</a></li>
+  </ul>
+</nav>
+<main>
+  <article>
+    <h2>What do we mean by “semantic”?</h2>
+    <p>Semantic elements describe their purpose (better accessibility, SEO, and structure).</p>
+  </article>
+  <section>
+    <h3>Semantic elements</h3>
+    <p><code>&lt;header&gt; &lt;nav&gt; &lt;main&gt; &lt;section&gt; &lt;article&gt; &lt;aside&gt; &lt;footer&gt; &lt;figure&gt; &lt;figcaption&gt;</code></p>
+  </section>
+  <section>
+    <h3>Non-semantic elements</h3>
+    <p><code>&lt;div&gt;</code> (block), <code>&lt;span&gt;</code> (inline) — generic containers with no meaning.</p>
+    <div id="box1">This is a <strong>div</strong> (generic block).</div>
+    <p>This sentence has a <span data-note="example">span</span> inside it.</p>
+  </section>
+</main>
+<footer><p>© <span id="year">2025</span></p></footer>
+<script src="shared.js"></script>
+</body></html>

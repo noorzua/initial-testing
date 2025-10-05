@@ -1,0 +1,41 @@
+<!DOCTYPE html><html lang="en"><head>
+  <meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>HTML Attributes</title>
+</head><body>
+<header><h1>HTML Attributes</h1><p><a href="index.html">← Home</a></p></header>
+<nav aria-label="Main navigation">
+  <ul>
+    <li><a href="tags.html">HTML Tags</a></li>
+    <li><a href="semantic.html">Semantic vs Non-Semantic</a></li>
+    <li><a href="forms.html">Forms</a></li>
+    <li><a href="attributes.html" aria-current="page">HTML Attributes</a></li>
+    <li><a href="meta.html">Meta Tags</a></li>
+    <li><a href="aria.html">ARIA</a></li>
+  </ul>
+</nav>
+<main>
+  <section>
+    <h2>Global attributes</h2>
+    <p id="p1" class="note" title="Tooltip on hover" lang="en" dir="ltr">This paragraph uses <code>id</code>, <code>class</code>, <code>title</code>, <code>lang</code>, <code>dir</code>.</p>
+    <p hidden>This is hidden via the <code>hidden</code> attribute.</p>
+    <p contenteditable="true" spellcheck="true">You can edit this text (contenteditable + spellcheck).</p>
+    <p data-info="custom data attribute">Custom data attribute via <code>data-*</code>.</p>
+  </section>
+  <section>
+    <h2>Link & media attributes</h2>
+    <p><a href="https://example.com" target="_blank" rel="noopener noreferrer">External link (target, rel)</a></p>
+    <figure>
+      <img src="https://via.placeholder.com/200x120" alt="Placeholder" width="200" height="120" loading="lazy">
+      <figcaption><code>width</code>, <code>height</code>, <code>loading=lazy</code>.</figcaption>
+    </figure>
+  </section>
+  <section>
+    <h2>Form control attributes</h2>
+    <label>Readonly: <input value="can't edit" readonly></label><br>
+    <label>Disabled: <input value="disabled" disabled></label><br>
+    <label>Pattern (3 letters): <input pattern="[A-Za-z]{3}" placeholder="ABC"></label>
+  </section>
+</main>
+<footer><p>© <span id="year">2025</span></p></footer>
+<script src="shared.js"></script>
+</body></html>

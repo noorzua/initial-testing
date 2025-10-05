@@ -1,0 +1,26 @@
+<!DOCTYPE html><html lang="en"><head>
+  <meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ARIA Basics</title>
+</head><body>
+<header><h1>ARIA Basics</h1><p><a href="index.html">← Home</a></p></header>
+<nav aria-label="Main navigation">
+  <ul>
+    <li><a href="tags.html">HTML Tags</a></li>
+    <li><a href="semantic.html">Semantic vs Non-Semantic</a></li>
+    <li><a href="forms.html">Forms</a></li>
+    <li><a href="attributes.html">HTML Attributes</a></li>
+    <li><a href="meta.html">Meta Tags</a></li>
+    <li><a href="aria.html" aria-current="page">ARIA</a></li>
+  </ul>
+</nav>
+<main>
+  <p><button aria-label="Close dialog">X</button> ← Accessible label.</p>
+  <p><span role="alert">This is an alert for screen readers.</span></p>
+  <p>
+    <a href="#" aria-describedby="link-help">A link with extra description</a>
+    <span id="link-help">This link opens a demo page.</span>
+  </p>
+</main>
+<footer><p>© <span id="year">2025</span></p></footer>
+<script src="shared.js"></script>
+</body></html>
